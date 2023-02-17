@@ -1,13 +1,9 @@
-const pageAccessedByReload = (
-    (window.performance && window.performance.type === 1) ||
-      window.performance
-        .getEntriesByType('navigation')
-        .map((nav) => nav.type)
-        .includes('reload')
-  );
-
-
-
+const pageAccessedByReload =
+  (window.performance && window.performance.type === 1) ||
+  window.performance
+    .getEntriesByType("navigation")
+    .map((nav) => nav.type)
+    .includes("reload");
 
 function randomDice() {
   var randomNumber1 = Math.floor(Math.random() * 6) + 1;
@@ -30,6 +26,6 @@ function randomDice() {
   }
 }
 
-if(pageAccessedByReload){
-    randomDice();
+if (pageAccessedByReload) {
+  randomDice();
 }
