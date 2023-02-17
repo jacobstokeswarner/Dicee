@@ -1,1 +1,1 @@
-# Dicee
+# This is a demo site to practice the basics of JavaScript.
